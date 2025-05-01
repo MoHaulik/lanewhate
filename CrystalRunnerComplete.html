@@ -1,0 +1,86 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Crystal Runner - WebXR Game</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <style>
+    body {
+      margin: 0;
+      overflow: hidden;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    }
+    #overlay {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      z-index: 1;
+    }
+    #start-button {
+      padding: 14px 28px;
+      font-size: 20px;
+      background: linear-gradient(135deg, rgba(72, 118, 255, 0.8), rgba(100, 80, 255, 0.9));
+      color: white;
+      border: none;
+      border-radius: 30px;
+      box-shadow: 0 4px 15px rgba(72, 118, 255, 0.5), 0 0 20px rgba(72, 118, 255, 0.3);
+      cursor: pointer;
+      transition: all 0.3s ease;
+      text-shadow: 0 1px 2px rgba(0,0,0,0.2);
+    }
+    #start-button:hover {
+      transform: translateY(-3px) scale(1.03);
+      box-shadow: 0 6px 20px rgba(72, 118, 255, 0.6), 0 0 30px rgba(72, 118, 255, 0.4);
+    }
+    #status {
+      margin-top: 15px;
+      font-size: 16px;
+      background: rgba(10, 20, 30, 0.6);
+      color: white;
+      padding: 12px 18px;
+      border-radius: 12px;
+      display: none;
+      backdrop-filter: blur(8px);
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2), inset 0 0 10px rgba(255,255,255,0.1);
+      border: 1px solid rgba(255,255,255,0.1);
+    }
+    #score-display {
+      position: absolute;
+      top: 80px;
+      left: 20px;
+      z-index: 1;
+      font-size: 28px;
+      font-weight: bold;
+      color: white;
+      background: rgba(10, 20, 30, 0.6);
+      padding: 12px 18px;
+      border-radius: 12px;
+      display: none;
+      backdrop-filter: blur(8px);
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2), inset 0 0 10px rgba(255,255,255,0.1);
+      text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+      border: 1px solid rgba(255,255,255,0.1);
+    }
+  </style>
+</head>
+<body>
+  <div id="overlay">
+    <button id="start-button">Start Crystal Runner</button>
+    <div id="status"></div>
+  </div>
+  <div id="score-display">Score: 0</div>
+  <script type="module">
+
+// Your complete updated JavaScript goes here.
+// Includes:
+// - Enhanced spawnObstacle()
+// - Enhanced updateObstacles()
+// - Rest of the game logic (camera, controller, rendering, etc.)
+
+  </script>
+</body>
+</html>
